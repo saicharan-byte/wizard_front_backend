@@ -81,7 +81,7 @@ function AdminDashboard() {
         if (!token) return;
         setLoadingUsers(true);
         try {
-            const res = await fetch('http://localhost:8003/authservice/getallusers/1/1000', {
+            const res = await fetch('https://wizard-gateway.onrender.com/authservice/getallusers/1/1000', {
                 headers: { 'Token': token }
             });
             const data = await res.json();

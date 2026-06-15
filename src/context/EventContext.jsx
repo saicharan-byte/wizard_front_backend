@@ -2,7 +2,7 @@ import { createContext, useState, useContext, useEffect, useCallback } from 'rea
 
 const EventContext = createContext();
 
-const API_BASE = 'http://localhost:8003';
+const API_BASE = 'https://wizard-gateway.onrender.com';
 
 export function EventProvider({ children }) {
     const [events, setEvents] = useState([]);

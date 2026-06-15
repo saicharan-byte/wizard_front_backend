@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
-const API_BASE = 'http://localhost:8003';
+const API_BASE = 'https://wizard-gateway.onrender.com';
 
 function TaskManager() {
     const [tasks, setTasks] = useState([]);

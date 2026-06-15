@@ -2,7 +2,7 @@ import { createContext, useState, useContext, useEffect } from 'react';
 
 const AuthContext = createContext();
 
-const API_BASE = 'http://localhost:8003';
+const API_BASE = 'https://wizard-gateway.onrender.com';
 
 export function AuthProvider({ children }) {
     const [user, setUser] = useState(() => {
